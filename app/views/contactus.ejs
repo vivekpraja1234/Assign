@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+<div class="contact-form-container">
+    <form id="contact-form" action="mailto:kalashgajjar04@gmail.com">
+        <h1 style="color: black;">Contact Me</h1>
+        <br>
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="button1">Send</button>
+        </div>
+    </form>
+</div>
+<div id="success-message" class="hidden">
+    <p>Your message has been sent successfully!</p>
+</div>
+<br>
+<fieldset id="social">
+    <h2 style="color: black;">Connect with Me</h2>
+    <br>
+    <a href="https://www.linkedin.com/in/kalash-gajjar-133664258/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn Logo" class="logos">
+    </a>
+    <a href="https://www.instagram.com/thisiskalashgajjar/" target="_blank">
+        <img src="images/insta.png" alt="Instagram Logo" class="logos">
+    </a>
+    <a href="https://github.com/thisiskalashgajjar" target="_blank">
+        <img src="images/github.png" alt="GitHub Logo" class="logos">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100085327579994" target="_blank">
+        <img src="images/fb.png" alt="Facebook Logo" class="logos">
+    </a>
+    <a href="mailto:kalashgajjar04@gmail.com">
+        <img src="images/mail.png" alt="Email Logo" class="logos">
+    </a>
+</fieldset>
+<%- include('partials/footer.ejs') %>
